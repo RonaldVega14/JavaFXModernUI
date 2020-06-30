@@ -60,6 +60,23 @@
     -fx-background-radius :  30 30 30 30;
 }
 
+.button-sig
+{
+-fx-background-color : #FA2C56;
+-fx-background-radius :  30 30 30 30;
+}
+.button-sig:hover
+{
+-fx-background-color : #524A7B ;
+-fx-background-radius :  30 30 30 30;
+}
+
+.button-sig:pressed
+{
+-fx-background-color : #2F2B43 ;
+-fx-background-radius :  30 30 30 30;
+}
+
 
 .combo-box
 {
@@ -76,7 +93,7 @@
 .combo-box:pressed
 {
     -fx-background-color : #141124;
-    -fx-border-color:  #FFFF;
+    -fx-border-color:  #FFFFFF;
     -fx-border-radius: 30;
 }
 
