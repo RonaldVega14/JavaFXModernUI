@@ -68,6 +68,15 @@
             </children></AnchorPane>
         <Pane layoutX="262.0" prefHeight="649.0" prefWidth="631.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="-4.0" AnchorPane.topAnchor="0.0">
             <children>
+            <AnchorPane layoutX="305.0" layoutY="567.0">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="220.0" styleClass="button-sig" stylesheets="@../css/fullpackstyling.css" text="Comenzar" textAlignment="CENTER" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
                 <Pane layoutX="-25.0" layoutY="-178.0" prefHeight="303.0" prefWidth="467.0" rotate="41.6" style="-fx-background-color: #FA2C56; -fx-background-radius: 70;" />
             <Pane layoutX="55.0" layoutY="55.0" prefHeight="156.0" prefWidth="719.0">
                <children>
@@ -137,14 +146,6 @@
                   </Label>
                </children>
             </Pane>
-            <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="284.0" layoutY="568.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="262.0" styleClass="button-sig" stylesheets="@../css/fullpackstyling.css" text="Informacion General" textAlignment="CENTER" textFill="WHITE" wrapText="true">
-               <padding>
-                  <Insets left="40.0" />
-               </padding>
-               <font>
-                  <Font name="System Bold" size="16.0" />
-               </font>
-            </Button>
             </children>
         </Pane>
     </children>
