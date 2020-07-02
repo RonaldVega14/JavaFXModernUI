@@ -30,7 +30,7 @@
                                     <fill>
                                         <LinearGradient endX="1.0" endY="1.0" startX="0.5190840431752096" startY="0.47615414397233785">
                                             <stops>
-                                                <Stop color="#ff4f4f" />
+                                                <Stop color="#2dbc70" />
                                                 <Stop color="WHITE" offset="0.9961685823754789" />
                                                 <Stop color="#ffffff00" offset="1.0" />
                                             </stops>
@@ -39,7 +39,7 @@
                                 </Circle>
                                 <ImageView fitHeight="38.0" fitWidth="39.0" layoutX="541.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@../resources/domain.png" />
+                                        <Image url="@../resources/local.png" />
                                     </image>
                                 </ImageView>
                                 <Label alignment="CENTER" layoutY="59.0" prefHeight="26.0" prefWidth="1084.0" text="PASO 1: LOCALIZACION" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
@@ -62,16 +62,16 @@
                                 <Font name="System Bold" size="18.0" />
                             </font>
                         </Button>
-                        <Pane layoutX="47.0" layoutY="228.0" prefHeight="361.0" prefWidth="561.0">
+                        <Pane layoutX="47.0" layoutY="228.0" prefHeight="368.0" prefWidth="561.0">
                             <children>
-                                <Button mnemonicParsing="false" opacity="0.8" prefHeight="362.0" prefWidth="561.0" styleClass="button-text" stylesheets="@../css/fullpackstyling.css" />
+                                <Button mnemonicParsing="false" opacity="0.8" prefHeight="367.0" prefWidth="561.0" styleClass="button-text" stylesheets="@../css/fullpackstyling.css" />
                                 <Circle layoutX="278.0" layoutY="16.0" radius="32.0" strokeType="INSIDE">
                                     <fill>
                                         <LinearGradient endX="1.0" endY="1.0" startX="0.5190840431752096" startY="0.47615414397233785">
                                             <stops>
-                                                <Stop color="#ff4f4f" />
+                                                <Stop color="#2dbc70" />
                                                 <Stop color="WHITE" offset="0.9961685823754789" />
-                                                <Stop color="#ffffff00" offset="1.0" />
+                                                <Stop color="#2db96e" offset="1.0" />
                                             </stops>
                                         </LinearGradient>
                                     </fill>
@@ -83,7 +83,7 @@
                                 </Label>
                                 <Label alignment="CENTER" layoutX="-1.0" layoutY="107.0" prefHeight="79.0" prefWidth="563.0" text="Como se esta trabajando con una malla regular, es decir que todos los elementos son iguales, no importa que elemento se tome ya que todos se ven representados por el mismo patron." textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
                                     <font>
-                                        <Font name="Arial" size="18.0" />
+                                        <Font name="Arial" size="16.0" />
                                     </font>
                                     <padding>
                                         <Insets left="45.0" right="5.0" />
@@ -91,58 +91,58 @@
                                 </Label>
                                 <ImageView fitHeight="38.0" fitWidth="39.0" layoutX="259.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@../resources/domain.png" />
+                                        <Image url="@../resources/local.png" />
                                     </image>
                                 </ImageView>
-                                <Label alignment="CENTER" layoutX="-1.0" layoutY="265.0" prefHeight="76.0" prefWidth="563.0" textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+                                <Label alignment="CENTER" layoutX="-1.0" layoutY="255.0" prefHeight="86.0" prefWidth="563.0" text="1.2 Luego de analizar el elemento nos damos cuenta que realizar su analisis en el &quot;mundo convencional&quot; (Plano X, Y, Z) nos resultaria muy complicado, por lo que se crea un &quot;mundo ideal&quot; (Plano Epsilon, Eta, Psi) en el que se pueda analizar el elemento de forma mas sencilla." textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
                                     <font>
-                                        <Font name="Arial" size="18.0" />
+                                        <Font name="Arial" size="16.0" />
                                     </font>
                                     <padding>
                                         <Insets left="45.0" right="5.0" />
                                     </padding>
                                 </Label>
-                                <Label alignment="CENTER" layoutX="-1.0" layoutY="192.0" prefHeight="76.0" prefWidth="563.0" text="1.1 Se asume que se tienen los valores de todas las incognitas para cada uno de los nodos (4, como se muestra en la figura 1.3)." textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+                                <Label alignment="CENTER" layoutX="-1.0" layoutY="195.0" prefHeight="53.0" prefWidth="563.0" text="1.1 Se asume que se tienen los valores de todas las incognitas para cada uno de los nodos (4, como se muestra en la figura 1.3)." textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
                                     <font>
-                                        <Font name="Arial" size="18.0" />
+                                        <Font name="Arial" size="16.0" />
                                     </font>
                                     <padding>
                                         <Insets left="45.0" right="5.0" />
                                     </padding>
                                 </Label>
-                                <Button fx:id="info2" layoutX="4.0" layoutY="202.0" mnemonicParsing="false" onAction="#ShowInfo" opacity="0.0" prefHeight="38.0" prefWidth="35.0" />
-                                <ImageView fitHeight="18.0" fitWidth="24.0" layoutX="13.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+                                <Button fx:id="info3" layoutX="4.0" layoutY="202.0" mnemonicParsing="false" onAction="#ShowInfo" opacity="0.0" prefHeight="38.0" prefWidth="35.0" />
+                                <ImageView fitHeight="18.0" fitWidth="24.0" layoutX="13.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
                                         <Image url="@../resources/question.png" />
                                     </image>
                                 </ImageView>
                             </children>
                         </Pane>
-                  <ImageView fitHeight="297.0" fitWidth="274.0" layoutX="767.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="368.0" fitWidth="430.0" layoutX="716.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../resources/tetraedro.png" />
                      </image>
                   </ImageView>
-                  <Circle fill="#da0404" layoutX="1017.0" layoutY="459.0" radius="5.0" strokeType="INSIDE" />
-                  <Circle fill="#da0404" layoutX="828.0" layoutY="509.0" radius="5.0" strokeType="INSIDE" />
-                  <Circle fill="#da0404" layoutX="878.0" layoutY="276.0" radius="5.0" strokeType="INSIDE" />
-                  <Circle fill="#da0404" layoutX="785.0" layoutY="433.0" radius="5.0" strokeType="INSIDE" />
-                  <Text fill="#cd0000" fontSmoothingType="LCD" layoutX="855.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A1, B1">
+                  <Circle fill="#2dbc70" layoutX="1052.0" layoutY="512.0" radius="5.0" strokeType="INSIDE" />
+                  <Circle fill="#2dbc70" layoutX="795.0" layoutY="578.0" radius="5.0" strokeType="INSIDE" />
+                  <Circle fill="#2dbc70" layoutX="865.0" layoutY="266.0" radius="5.0" strokeType="INSIDE" />
+                  <Circle fill="#2dbc70" layoutX="740.0" layoutY="479.0" radius="5.0" strokeType="INSIDE" />
+                  <Text fill="#2dbc70" fontSmoothingType="LCD" layoutX="842.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A1, B1">
                      <font>
                         <Font name="Arial" size="15.0" />
                      </font>
                   </Text>
-                  <Text fill="#cd0000" fontSmoothingType="LCD" layoutX="727.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A4, B4">
+                  <Text fill="#2dbc70" fontSmoothingType="LCD" layoutX="682.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A4, B4">
                      <font>
                         <Font name="Arial" size="15.0" />
                      </font>
                   </Text>
-                  <Text fill="#cd0000" fontSmoothingType="LCD" layoutX="1029.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A2, B2">
+                  <Text fill="#2dbc70" fontSmoothingType="LCD" layoutX="1061.0" layoutY="518.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A2, B2">
                      <font>
                         <Font name="Arial" size="15.0" />
                      </font>
                   </Text>
-                  <Text fill="#cd0000" fontSmoothingType="LCD" layoutX="805.0" layoutY="531.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A3, B3">
+                  <Text fill="#2dbc70" fontSmoothingType="LCD" layoutX="777.0" layoutY="601.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A3, B3">
                      <font>
                         <Font name="Arial" size="15.0" />
                      </font>
