@@ -88,20 +88,17 @@
                               <Insets left="45.0" right="5.0" />
                            </padding>
                         </Label>
-                        <ImageView fitHeight="38.0" fitWidth="39.0" layoutX="259.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../resources/domain.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="18.0" fitWidth="24.0" layoutX="12.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../resources/question.png" />
-                           </image>
-                        </ImageView>
-                        <Button fx:id="info1" layoutX="4.0" layoutY="114.0" mnemonicParsing="false" onAction="#ShowInfo" opacity="0.0" prefHeight="38.0" prefWidth="35.0">
+                        <Button fx:id="info1" layoutX="4.0" layoutY="114.0" mnemonicParsing="false" onAction="#showInfo" prefHeight="38.0" prefWidth="35.0" styleClass="button-con" stylesheets="@../css/fullpackstyling.css">
                            <rotationAxis>
                               <Point3D />
                            </rotationAxis>
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/question.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
                         </Button>
                         <Label alignment="CENTER" layoutX="-1.0" layoutY="152.0" prefHeight="76.0" prefWidth="563.0" text="El mallado representa la discretizacion del dominio, esto nos permite expresar este dominio en la computadora" textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
                            <font>
@@ -127,10 +124,23 @@
                               <Insets left="45.0" right="5.0" />
                            </padding>
                         </Label>
-                        <Button fx:id="info2" layoutX="4.0" layoutY="202.0" mnemonicParsing="false" onAction="#ShowInfo" opacity="0.0" prefHeight="38.0" prefWidth="35.0" />
-                        <ImageView fitHeight="18.0" fitWidth="24.0" layoutX="13.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+                        <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="156.0" layoutY="301.0" mnemonicParsing="false" onAction="#showTable" prefHeight="40.0" prefWidth="244.0" styleClass="button-con" stylesheets="@../css/fullpackstyling.css" text="VER TABLA DE CONECTIVIDADES" textAlignment="CENTER" textFill="WHITE" underline="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="info2" layoutX="4.0" layoutY="202.0" mnemonicParsing="false" onAction="#showInfo" prefHeight="38.0" prefWidth="35.0" styleClass="button-con" stylesheets="@../css/fullpackstyling.css">
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/question.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <ImageView fitHeight="38.0" fitWidth="39.0" layoutX="259.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../resources/question.png" />
+                              <Image url="@../resources/domain.png" />
                            </image>
                         </ImageView>
                      </children>

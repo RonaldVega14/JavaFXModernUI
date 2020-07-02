@@ -1,11 +1,13 @@
 package sample;
 
+import javafx.animation.FadeTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
+import javafx.util.Duration;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -45,7 +47,12 @@ public class Controller implements Initializable {
     }
 
     @FXML
-    private void ShowInfo(ActionEvent event){
+    private void showInfo(ActionEvent event){
+
+    }
+
+    @FXML
+    private void showTable(ActionEvent event){
 
     }
 
