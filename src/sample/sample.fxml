@@ -6,6 +6,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.LinearGradient?>
@@ -13,36 +14,145 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="721.0" prefWidth="1201.0" style="-fx-background-color: #2F2B43;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
-    <children>
-        <AnchorPane prefHeight="519.0" prefWidth="262.0" style="-fx-background-color: #393351;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="722.0" prefWidth="1182.0" style="-fx-background-color: #2F2B43;">
+          <children>
+              <Pane layoutX="5.0" layoutY="5.0" prefHeight="722.0" prefWidth="1174.0" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="5.0">
+                  <children>
+                  <AnchorPane layoutX="305.0" layoutY="567.0" />
+                      <Pane layoutX="-25.0" layoutY="-178.0" prefHeight="303.0" prefWidth="467.0" rotate="41.6" style="-fx-background-color: #FA2C56; -fx-background-radius: 70;" />
+                  <Pane layoutX="56.0" layoutY="43.0" prefHeight="222.0" prefWidth="1084.0">
+                     <children>
+                        <Button mnemonicParsing="false" opacity="0.7" prefHeight="222.0" prefWidth="1084.0" styleClass="button-text" stylesheets="@../css/fullpackstyling.css" />
+                        <Circle layoutX="560.0" layoutY="13.0" radius="32.0" strokeType="INSIDE">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0" startY="0.4952380952380952">
+                                 <stops>
+                                    <Stop color="#4f79ff" />
+                                    <Stop color="WHITE" offset="0.9961685823754789" />
+                                    <Stop color="#4f79ff" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Circle>
+                        <ImageView fitHeight="27.0" fitWidth="24.0" layoutX="547.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/icons8_Bill_50px_2.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="-2.0" layoutY="59.0" prefHeight="26.0" prefWidth="1084.0" text="DEFINICION DE LA APLICACION" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+                           <font>
+                              <Font name="Arial Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="1.0" layoutY="78.0" prefHeight="145.0" prefWidth="1084.0" text="En esta aplicacion encontrara la explicacion paso a paso del metodo de los elementos finitos en 3 dimensiones para la simulacion de procesos fisicos aplicado a un modelo con coeficientes variables en todos sus terminos. Este aplicativo tiene fines estrictamente educativos, por lo que los calculos no seran realizados dentro del mismo." textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="15.0" right="15.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="56.0" layoutY="295.0" prefHeight="337.0" prefWidth="1084.0">
+                     <children>
+                        <Button layoutX="1.0" mnemonicParsing="false" prefHeight="337.0" prefWidth="1084.0" styleClass="button-text" stylesheets="@../css/fullpackstyling.css" />
+                        <Circle layoutX="561.0" layoutY="6.0" radius="32.0" strokeType="INSIDE">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0" startY="0.4952380952380952">
+                                 <stops>
+                                    <Stop color="#4f79ff" />
+                                    <Stop color="WHITE" offset="0.9961685823754789" />
+                                    <Stop color="#4f79ff" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Circle>
+                        <ImageView fitHeight="27.0" fitWidth="24.0" layoutX="548.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/chart.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="-2.0" layoutY="49.0" prefHeight="26.0" prefWidth="1090.0" text="DEFINICION DEL PROBLEMA" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+                           <font>
+                              <Font name="Arial Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="252.0" fitWidth="537.0" layoutX="542.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/modeloparadesafio.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="8.0" layoutY="98.0" prefHeight="97.0" prefWidth="547.0" text="Resolver el siguiente sistema de ecuaciones utilizando el metodo de los elementos finitos en 3 dimensiones." textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="15.0" right="15.0" />
+                           </padding>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="12.0" layoutY="202.0" prefHeight="123.0" prefWidth="494.0" text="Aplicar al menos 1 condicion de Dirichlet y 1 condicion de Nuemann." textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="15.0" right="15.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="511.0" layoutY="644.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="220.0" styleClass="button-sig" stylesheets="@../css/fullpackstyling.css" text="Comenzar" textAlignment="CENTER" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  </children>
+              </Pane>
+          </children>
+      </AnchorPane>
+   </center>
+   <left>
+        <AnchorPane prefHeight="519.0" prefWidth="262.0" style="-fx-background-color: #393351;" BorderPane.alignment="CENTER">
             <children>
                 <VBox layoutY="160.0" prefHeight="356.0" prefWidth="262.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="160.0">
                     <children>
-                        <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="262.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css" text="Informacion General" textFill="WHITE">
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#Home" prefHeight="49.0" prefWidth="262.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css" text="Informacion General" textFill="WHITE">
                             <VBox.margin>
                                 <Insets />
                             </VBox.margin>
                             <padding>
-                                <Insets left="40.0" />
+                                <Insets left="20.0" />
                             </padding>
                      <font>
                         <Font name="System Bold" size="16.0" />
-                     </font></Button>
-                        <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="262.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css" text="Definicion del modelo" textFill="WHITE">
+                     </font>
+                  </Button>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#StartProcess" prefHeight="49.0" prefWidth="262.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css" text="Aplicacion del MEF" textFill="WHITE">
                             <padding>
-                                <Insets left="40.0" />
+                                <Insets left="20.0" />
                             </padding>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
                         </Button>
-                        <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="262.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css" text="Aplicacion de MEF al modelo" textFill="WHITE">
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#Assembly" prefHeight="49.0" prefWidth="262.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css" text="Proceso Grafico de Ensamblaje" textFill="WHITE">
                             <padding>
-                                <Insets left="40.0" />
+                                <Insets left="20.0" />
                             </padding>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
                         </Button>
-                        <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="262.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css" text="Explicacion del modelo" textFill="WHITE">
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#ut" prefHeight="49.0" prefWidth="262.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css" text="Explicacion del Modelo" textFill="WHITE">
                             <padding>
-                                <Insets left="40.0" />
+                                <Insets left="20.0" />
                             </padding>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
                         </Button>
                     </children>
                 </VBox>
@@ -65,98 +175,7 @@
                   </Label>
                     </children>
                 </Pane>
-            </children></AnchorPane>
-        <Pane layoutX="262.0" prefHeight="649.0" prefWidth="631.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="-4.0" AnchorPane.topAnchor="0.0">
-            <children>
-            <AnchorPane layoutX="305.0" layoutY="567.0" />
-                <Pane layoutX="-25.0" layoutY="-178.0" prefHeight="303.0" prefWidth="467.0" rotate="41.6" style="-fx-background-color: #FA2C56; -fx-background-radius: 70;" />
-            <Pane layoutX="56.0" layoutY="43.0" prefHeight="222.0" prefWidth="856.0">
-               <children>
-                  <Button mnemonicParsing="false" opacity="0.7" prefHeight="222.0" prefWidth="856.0" styleClass="button2" stylesheets="@../css/fullpackstyling.css" />
-                  <Circle layoutX="431.0" layoutY="14.0" radius="32.0" strokeType="INSIDE">
-                     <fill>
-                        <LinearGradient endX="1.0" endY="1.0" startY="0.4952380952380952">
-                           <stops>
-                              <Stop color="#4f79ff" />
-                              <Stop color="WHITE" offset="0.9961685823754789" />
-                              <Stop color="#4f79ff" offset="1.0" />
-                           </stops>
-                        </LinearGradient>
-                     </fill>
-                  </Circle>
-                  <ImageView fitHeight="27.0" fitWidth="24.0" layoutX="419.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../resources/icons8_Bill_50px_2.png" />
-                     </image>
-                  </ImageView>
-                  <Label alignment="CENTER" layoutX="-2.0" layoutY="59.0" prefHeight="21.0" prefWidth="867.0" text="DEFINICION DE LA APLICACION" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
-                     <font>
-                        <Font name="Arial Bold" size="22.0" />
-                     </font>
-                  </Label>
-                  <Label alignment="CENTER" layoutX="1.0" layoutY="78.0" prefHeight="145.0" prefWidth="850.0" text="En esta aplicacion encontrara la explicacion paso a paso del metodo de los elementos finitos en 3 dimensiones para la simulacion de procesos fisicos aplicado a un modelo con coeficientes variables en todos sus terminos. Este aplicativo tiene fines estrictamente educativos, por lo que los calculos no seran realizados dentro del mismo." textAlignment="CENTER" textFill="WHITE" wrapText="true">
-                     <font>
-                        <Font name="Arial" size="18.0" />
-                     </font>
-                     <padding>
-                        <Insets bottom="5.0" left="15.0" right="15.0" />
-                     </padding>
-                  </Label>
-               </children>
-            </Pane>
-            <Pane layoutX="56.0" layoutY="295.0" prefHeight="337.0" prefWidth="856.0">
-               <children>
-                  <Button layoutX="1.0" mnemonicParsing="false" prefHeight="337.0" prefWidth="856.0" styleClass="button2" stylesheets="@../css/fullpackstyling.css" />
-                  <Circle layoutX="431.0" layoutY="2.0" radius="32.0" strokeType="INSIDE">
-                     <fill>
-                        <LinearGradient endX="1.0" endY="1.0" startY="0.4952380952380952">
-                           <stops>
-                              <Stop color="#4f79ff" />
-                              <Stop color="WHITE" offset="0.9961685823754789" />
-                              <Stop color="#4f79ff" offset="1.0" />
-                           </stops>
-                        </LinearGradient>
-                     </fill>
-                  </Circle>
-                  <ImageView fitHeight="27.0" fitWidth="24.0" layoutX="419.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../resources/chart.png" />
-                     </image>
-                  </ImageView>
-                  <Label alignment="CENTER" layoutX="-2.0" layoutY="49.0" prefHeight="21.0" prefWidth="867.0" text="DEFINICION DEL PROBLEMA" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
-                     <font>
-                        <Font name="Arial Bold" size="22.0" />
-                     </font>
-                  </Label>
-                  <ImageView fitHeight="268.0" fitWidth="509.0" layoutX="348.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../resources/modeloparadesafio.png" />
-                     </image>
-                  </ImageView>
-                  <Label alignment="CENTER" layoutX="8.0" layoutY="98.0" prefHeight="97.0" prefWidth="382.0" text="Resolver el siguiente sistema de ecuaciones utilizando el metodo de los elementos finitos en 3 dimensiones." textFill="WHITE" wrapText="true">
-                     <font>
-                        <Font name="Arial" size="18.0" />
-                     </font>
-                     <padding>
-                        <Insets bottom="5.0" left="15.0" right="15.0" />
-                     </padding>
-                  </Label>
-                  <Label alignment="CENTER" layoutX="12.0" layoutY="202.0" prefHeight="123.0" prefWidth="375.0" text="Aplicar al menos 1 condicion de Dirichlet y 1 condicion de Nuemann." textFill="WHITE" wrapText="true">
-                     <font>
-                        <Font name="Arial" size="18.0" />
-                     </font>
-                     <padding>
-                        <Insets bottom="5.0" left="15.0" right="15.0" />
-                     </padding>
-                  </Label>
-               </children>
-            </Pane>
-            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="373.0" layoutY="649.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="220.0" styleClass="button-sig" stylesheets="@../css/fullpackstyling.css" text="Comenzar" textAlignment="CENTER" textFill="WHITE" underline="true">
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font>
-            </Button>
             </children>
-        </Pane>
-    </children>
-</AnchorPane>
+      </AnchorPane>
+   </left>
+</BorderPane>
