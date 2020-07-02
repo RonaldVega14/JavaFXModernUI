@@ -22,13 +22,16 @@ public class Controller implements Initializable {
     private void Home(ActionEvent event){
         System.out.println("Home clicked!");
         FxmlLoader object = new FxmlLoader();
-        Pane view = object.getPage("sample");
+        Pane view = object.getPage("home");
         mainPane.setCenter(view);
     }
 
     @FXML
     private void StartProcess(ActionEvent event){
-
+        System.out.println("Start clicked!");
+        FxmlLoader object = new FxmlLoader();
+        Pane view = object.getPage("paso0");
+        mainPane.setCenter(view);
     }
 
     @FXML
@@ -38,6 +41,11 @@ public class Controller implements Initializable {
 
     @FXML
     private void ExplainProcess(ActionEvent event){
+
+    }
+
+    @FXML
+    private void ShowInfo(ActionEvent event){
 
     }
 
