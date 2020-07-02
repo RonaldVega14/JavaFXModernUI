@@ -44,6 +44,14 @@ public class Controller implements Initializable {
         mainPane.setCenter(view);
     }
 
+    @FXML
+    private void toStepTwo(ActionEvent event){
+        System.out.println("To Event Two clicked!");
+        FxmlLoader object = new FxmlLoader();
+        Pane view = object.getPage("paso2");
+        mainPane.setCenter(view);
+    }
+
 
     @FXML
     private void Assembly(ActionEvent event){

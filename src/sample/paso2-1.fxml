@@ -19,7 +19,7 @@
             <children>
                 <Pane layoutX="5.0" layoutY="5.0" prefHeight="731.0" prefWidth="1174.0" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="5.0">
                     <children>
-                        <Pane blendMode="SRC_ATOP" layoutX="-29.0" layoutY="643.0" prefHeight="303.0" prefWidth="467.0" rotate="-54.5" style="-fx-background-color: #FA2C56; -fx-background-radius: 70;" />
+                        <Pane layoutX="-252.0" layoutY="293.0" prefHeight="303.0" prefWidth="467.0" rotate="52.8" style="-fx-background-color: #FA2C56; -fx-background-radius: 70;" />
                         <Pane layoutX="47.0" layoutY="43.0" prefHeight="263.0" prefWidth="1084.0">
                             <children>
                               <Pane blendMode="SRC_ATOP" layoutX="883.0" layoutY="-137.0" prefHeight="303.0" prefWidth="467.0" rotate="123.1" style="-fx-background-color: #FA2C56; -fx-background-radius: 70;" />
