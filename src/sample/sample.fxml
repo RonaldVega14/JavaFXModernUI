@@ -103,7 +103,7 @@
                         </Label>
                      </children>
                   </Pane>
-                  <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="511.0" layoutY="644.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="220.0" styleClass="button-sig" stylesheets="@../css/fullpackstyling.css" text="Comenzar" textAlignment="CENTER" textFill="WHITE" underline="true">
+                  <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="511.0" layoutY="644.0" mnemonicParsing="false" onAction="#StartProcess" prefHeight="49.0" prefWidth="220.0" styleClass="button-sig" stylesheets="@../css/fullpackstyling.css" text="Comenzar" textAlignment="CENTER" textFill="WHITE" underline="true">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
