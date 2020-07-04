@@ -21,37 +21,36 @@
                     <children>
                   <Pane blendMode="SRC_ATOP" layoutX="920.0" layoutY="444.0" prefHeight="303.0" prefWidth="467.0" rotate="41.6" style="-fx-background-color: #FA2C56; -fx-background-radius: 70;" />
                         <Pane layoutX="-25.0" layoutY="-178.0" prefHeight="303.0" prefWidth="467.0" rotate="41.6" style="-fx-background-color: #FA2C56; -fx-background-radius: 70;" />
-                        <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="498.0" layoutY="648.0" mnemonicParsing="false" onAction="#toStepFive" prefHeight="49.0" prefWidth="220.0" styleClass="button-sig" stylesheets="@../css/fullpackstyling.css" text="Paso 5" textAlignment="CENTER" textFill="WHITE" underline="true">
+                        <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="477.0" layoutY="648.0" mnemonicParsing="false" onAction="#toStepFive" prefHeight="49.0" prefWidth="220.0" styleClass="button-sig" stylesheets="@../css/fullpackstyling.css" text="Paso 5" textAlignment="CENTER" textFill="WHITE" underline="true">
                             <font>
                                 <Font name="System Bold" size="18.0" />
                             </font>
                         </Button>
-                        <Pane layoutX="98.0" layoutY="31.0" prefHeight="593.0" prefWidth="561.0">
+                        <Pane layoutX="71.0" layoutY="31.0" prefHeight="231.0" prefWidth="1033.0">
                             <children>
-                                <Button mnemonicParsing="false" opacity="0.8" prefHeight="593.0" prefWidth="561.0" styleClass="button-text" stylesheets="@../css/fullpackstyling.css" />
-                                <Circle layoutX="278.0" layoutY="16.0" radius="32.0" strokeType="INSIDE">
+                                <Button mnemonicParsing="false" opacity="0.8" prefHeight="232.0" prefWidth="1032.0" styleClass="button-text" stylesheets="@../css/fullpackstyling.css" />
+                                <Circle layoutX="517.0" layoutY="16.0" radius="32.0" strokeType="INSIDE">
                                     <fill>
                                         <LinearGradient endX="1.0" endY="0.9083969497498665" startX="0.5190840431752096" startY="0.47615414397233785">
                                             <stops>
-                                                <Stop color="#2741a1" />
-                                                <Stop color="#2741a1" offset="0.007633587786259542" />
-                                    <Stop color="WHITE" offset="0.9961685823754789" />
+                                                <Stop color="#289fa0" />
+                                                <Stop color="WHITE" offset="0.9961685823754789" />
                                     <Stop color="#2741a100" offset="1.0" />
                                             </stops>
                                         </LinearGradient>
                                     </fill>
                                 </Circle>
-                                <Label alignment="CENTER" layoutX="-1.0" layoutY="69.0" prefHeight="26.0" prefWidth="563.0" text="PASO 4: METODO DE LOS PESOS PONDERADOS" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+                                <Label alignment="CENTER" layoutX="-1.0" layoutY="69.0" prefHeight="26.0" prefWidth="986.0" text="PASO 6: INTEGRACION POR PARTES" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
                                     <font>
                                         <Font name="Arial Bold" size="22.0" />
                                     </font>
                                 </Label>
-                                <ImageView fitHeight="38.0" fitWidth="46.0" layoutX="259.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+                                <ImageView fitHeight="38.0" fitWidth="46.0" layoutX="498.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@../resources/weight.png" />
+                                        <Image url="@../resources/integral.png" />
                                     </image>
                                 </ImageView>
-                                <Label alignment="TOP_LEFT" layoutX="-1.0" layoutY="103.0" prefHeight="74.0" prefWidth="563.0" text="Este paso busca hacer que la suma de todos los residuales del dominio sean igual a 0. Debido a esto entra en juego el valor del peso ponderado." textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+                                <Label alignment="TOP_LEFT" layoutX="-1.0" layoutY="103.0" prefHeight="74.0" prefWidth="986.0" text="Debido a que tenemos terminos con doble derivacion (G y E) debemos de realizar integracion por partes para estos terminos utilizando &quot;la formula de la vaca&quot;, pero para este caso debemos modificar un poco la formula de la vaca ya que estamos trabajando con matrices y hay que respetar su orden de aparicion." textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
                                     <font>
                                         <Font name="Arial" size="18.0" />
                                     </font>
@@ -59,7 +58,7 @@
                                         <Insets left="30.0" right="15.0" />
                                     </padding>
                                 </Label>
-                        <Label alignment="TOP_LEFT" layoutX="-1.0" layoutY="191.0" prefHeight="48.0" prefWidth="563.0" text="4.1 Sumar los valores de los residuales a lo largo del dominio. En otras palabras, integrar el residual en todo el volumen." textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+                        <Label alignment="TOP_LEFT" layoutX="-1.0" layoutY="177.0" prefHeight="30.0" prefWidth="986.0" text="6.1 Realizar integracion por partes para cada termino." textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
                            <font>
                               <Font name="Arial" size="18.0" />
                            </font>
@@ -67,7 +66,7 @@
                               <Insets left="30.0" right="15.0" />
                            </padding>
                         </Label>
-                        <Label alignment="TOP_LEFT" layoutY="239.0" prefHeight="46.0" prefWidth="563.0" text="4.2 Multiplicar cada uno de los valores por su respectiva funcion de peso" textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+                        <Label alignment="TOP_LEFT" layoutX="-1.0" layoutY="202.0" prefHeight="30.0" prefWidth="986.0" text="6.2 Sustituir el nuevo resultado dentro de la forma fuerte del sistema para convertirlo en su &quot;forma debil&quot;." textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
                            <font>
                               <Font name="Arial" size="18.0" />
                            </font>
@@ -75,74 +74,75 @@
                               <Insets left="30.0" right="15.0" />
                            </padding>
                         </Label>
-                        <Label alignment="TOP_LEFT" layoutY="285.0" prefHeight="24.0" prefWidth="563.0" text="4.3 Igualar este valor a 0." textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
-                           <font>
-                              <Font name="Arial" size="18.0" />
-                           </font>
-                           <padding>
-                              <Insets left="30.0" right="15.0" />
-                           </padding>
-                        </Label>
-                        <ImageView fitHeight="180.0" fitWidth="213.0" layoutX="172.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
+                        <Button fx:id="info4" layoutX="870.0" layoutY="188.0" mnemonicParsing="false" onAction="#showInfo" opacity="0.0" prefHeight="38.0" prefWidth="35.0" />
+                        <ImageView fitHeight="18.0" fitWidth="24.0" layoutX="878.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../resources/wrm.png" />
+                              <Image url="@../resources/question.png" />
                            </image>
                         </ImageView>
-                        <Label alignment="CENTER" layoutX="-3.0" layoutY="339.0" prefHeight="26.0" prefWidth="563.0" text="DESARROLLO" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
-                           <font>
-                              <Font name="Arial Bold" size="22.0" />
-                           </font>
-                        </Label>
                             </children>
                         </Pane>
-                  <Pane layoutX="723.0" layoutY="38.0" prefHeight="438.0" prefWidth="336.0">
+                  <Pane layoutX="71.0" layoutY="293.0" prefHeight="337.0" prefWidth="484.0">
                      <children>
-                        <Button layoutX="-1.0" layoutY="-2.0" mnemonicParsing="false" opacity="0.8" prefHeight="441.0" prefWidth="337.0" styleClass="button-text" stylesheets="@../css/fullpackstyling.css" />
-                        <Circle layoutX="167.0" radius="32.0" strokeType="INSIDE">
+                        <Button mnemonicParsing="false" opacity="0.8" prefHeight="338.0" prefWidth="484.0" styleClass="button-text" stylesheets="@../css/fullpackstyling.css" />
+                        <Circle layoutX="242.0" layoutY="14.0" radius="32.0" strokeType="INSIDE">
                            <fill>
-                              <LinearGradient endX="1.0" endY="1.0" startX="0.5190840431752096" startY="0.47615414397233785">
+                              <LinearGradient endX="1.0" endY="0.9083969497498665" startX="0.5190840431752096" startY="0.47615414397233785">
                                  <stops>
-                                    <Stop color="#2741a1" />
+                                    <Stop color="#289fa0" />
+                                    <Stop color="#289fa0" offset="0.007633587786259542" />
                                     <Stop color="WHITE" offset="0.9961685823754789" />
-                                    <Stop color="#2db96e" offset="1.0" />
+                                    <Stop color="#2741a100" offset="1.0" />
                                  </stops>
                               </LinearGradient>
                            </fill>
                         </Circle>
-                        <Label alignment="CENTER" layoutY="41.0" prefHeight="68.0" prefWidth="337.0" text="¿QUE SON LOS PESOS PONDERADOS?" textAlignment="CENTER" textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+                        <Label alignment="CENTER" layoutY="46.0" prefHeight="26.0" prefWidth="486.0" text="DESARROLLO PARA G" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
                            <font>
                               <Font name="Arial Bold" size="22.0" />
                            </font>
                         </Label>
-                        <ImageView fitHeight="38.0" fitWidth="46.0" layoutX="149.0" layoutY="-19.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="38.0" fitWidth="46.0" layoutX="223.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../resources/weight.png" />
+                              <Image url="@../resources/integral.png" />
                            </image>
                         </ImageView>
-                        <Label alignment="TOP_LEFT" layoutY="129.0" prefHeight="111.0" prefWidth="337.0" text="Los pesos ponderados son funciones que representan cuanta influencia tiene el calculo del error para cada punto con respecto a todo el resultado." textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+                        <ImageView fitHeight="264.0" fitWidth="307.0" layoutX="88.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/6G.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="620.0" layoutY="293.0" prefHeight="337.0" prefWidth="484.0">
+                     <children>
+                        <Button mnemonicParsing="false" opacity="0.8" prefHeight="338.0" prefWidth="484.0" styleClass="button-text" stylesheets="@../css/fullpackstyling.css" />
+                        <Circle layoutX="242.0" layoutY="14.0" radius="32.0" strokeType="INSIDE">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="0.9083969497498665" startX="0.5190840431752096" startY="0.47615414397233785">
+                                 <stops>
+                                    <Stop color="#289fa0" />
+                                    <Stop color="WHITE" offset="0.9961685823754789" />
+                                    <Stop color="#2741a100" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Circle>
+                        <Label alignment="CENTER" layoutX="-1.0" layoutY="46.0" prefHeight="26.0" prefWidth="486.0" text="DESARROLLO PARA E" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
                            <font>
-                              <Font name="Arial" size="18.0" />
+                              <Font name="Arial Bold" size="22.0" />
                            </font>
-                           <padding>
-                              <Insets left="15.0" right="15.0" />
-                           </padding>
                         </Label>
-                        <Label alignment="TOP_LEFT" layoutY="251.0" prefHeight="48.0" prefWidth="337.0" text="Las funciones de los pesos se representan con la letra W." textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
-                           <font>
-                              <Font name="Arial" size="18.0" />
-                           </font>
-                           <padding>
-                              <Insets left="15.0" right="15.0" />
-                           </padding>
-                        </Label>
-                        <Label alignment="TOP_LEFT" layoutX="-1.0" layoutY="311.0" prefHeight="74.0" prefWidth="337.0" text="Debe de existir una funcion de peso para cada uno de los valores de las  de las incognitas en el sistema." textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
-                           <font>
-                              <Font name="Arial" size="18.0" />
-                           </font>
-                           <padding>
-                              <Insets left="15.0" right="15.0" />
-                           </padding>
-                        </Label>
+                        <ImageView fitHeight="38.0" fitWidth="46.0" layoutX="223.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/integral.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="263.0" fitWidth="294.0" layoutX="95.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/6E.png" />
+                           </image>
+                        </ImageView>
                      </children>
                   </Pane>
                     </children>

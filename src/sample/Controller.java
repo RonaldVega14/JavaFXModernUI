@@ -85,6 +85,14 @@ public class Controller implements Initializable {
     }
 
     @FXML
+    private void toStepSix(ActionEvent event){
+        System.out.println("To Event Five clicked!");
+        FxmlLoader object = new FxmlLoader();
+        Pane view = object.getPage("paso6");
+        mainPane.setCenter(view);
+    }
+
+    @FXML
     private void Assembly(ActionEvent event){
 
     }

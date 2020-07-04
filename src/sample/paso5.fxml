@@ -19,17 +19,16 @@
             <children>
                 <Pane layoutX="5.0" layoutY="5.0" prefHeight="722.0" prefWidth="1174.0" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="5.0">
                     <children>
-                  <Pane blendMode="SRC_ATOP" layoutX="920.0" layoutY="444.0" prefHeight="303.0" prefWidth="467.0" rotate="41.6" style="-fx-background-color: #FA2C56; -fx-background-radius: 70;" />
                         <Pane layoutX="-25.0" layoutY="-178.0" prefHeight="303.0" prefWidth="467.0" rotate="41.6" style="-fx-background-color: #FA2C56; -fx-background-radius: 70;" />
-                        <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="498.0" layoutY="648.0" mnemonicParsing="false" onAction="#toStepFive" prefHeight="49.0" prefWidth="220.0" styleClass="button-sig" stylesheets="@../css/fullpackstyling.css" text="Paso 5" textAlignment="CENTER" textFill="WHITE" underline="true">
+                        <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="498.0" layoutY="648.0" mnemonicParsing="false" onAction="#toStepSix" prefHeight="49.0" prefWidth="220.0" styleClass="button-sig" stylesheets="@../css/fullpackstyling.css" text="Paso 6" textAlignment="CENTER" textFill="WHITE" underline="true">
                             <font>
                                 <Font name="System Bold" size="18.0" />
                             </font>
                         </Button>
-                        <Pane layoutX="98.0" layoutY="31.0" prefHeight="593.0" prefWidth="992.0">
+                        <Pane layoutX="112.0" layoutY="31.0" prefHeight="593.0" prefWidth="431.0">
                             <children>
-                                <Button mnemonicParsing="false" opacity="0.8" prefHeight="593.0" prefWidth="993.0" styleClass="button-text" stylesheets="@../css/fullpackstyling.css" />
-                                <Circle layoutX="496.0" layoutY="16.0" radius="32.0" strokeType="INSIDE">
+                                <Button mnemonicParsing="false" opacity="0.8" prefHeight="593.0" prefWidth="431.0" styleClass="button-text" stylesheets="@../css/fullpackstyling.css" />
+                                <Circle layoutX="219.0" layoutY="14.0" radius="32.0" strokeType="INSIDE">
                                     <fill>
                                         <LinearGradient endX="1.0" endY="0.9083969497498665" startX="0.5190840431752096" startY="0.47615414397233785">
                                             <stops>
@@ -41,17 +40,17 @@
                                         </LinearGradient>
                                     </fill>
                                 </Circle>
-                                <Label alignment="CENTER" layoutX="-1.0" layoutY="69.0" prefHeight="26.0" prefWidth="992.0" text="PASO 5: GALERKIN" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+                                <Label alignment="CENTER" layoutX="-1.0" layoutY="69.0" prefHeight="26.0" prefWidth="433.0" text="PASO 5: GALERKIN" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
                                     <font>
                                         <Font name="Arial Bold" size="22.0" />
                                     </font>
                                 </Label>
-                                <ImageView fitHeight="38.0" fitWidth="46.0" layoutX="476.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+                                <ImageView fitHeight="38.0" fitWidth="46.0" layoutX="200.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@../resources/weight.png" />
+                                        <Image url="@../resources/Galerkin.png" />
                                     </image>
                                 </ImageView>
-                                <Label alignment="TOP_LEFT" layoutX="-1.0" layoutY="103.0" prefHeight="48.0" prefWidth="993.0" text="Hasta el momento no sabemos cuales son las funciones de forma, por esto mismo Galerkin dice que las funciones de forma son iguales a las funciones de forma transpuestas" textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+                                <Label alignment="TOP_LEFT" layoutX="-1.0" layoutY="103.0" prefHeight="94.0" prefWidth="433.0" text="Hasta el momento no sabemos cuales son las funciones de forma, por esto mismo Galerkin dice que las funciones de forma son iguales a las funciones de forma transpuestas" textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
                                     <font>
                                         <Font name="Arial" size="18.0" />
                                     </font>
@@ -59,7 +58,7 @@
                                         <Insets left="30.0" right="15.0" />
                                     </padding>
                                 </Label>
-                        <Label alignment="TOP_LEFT" layoutY="161.0" prefHeight="48.0" prefWidth="993.0" text="5.1 Sustituir todas funciones de forma dentro del modelo." textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+                        <Label alignment="TOP_LEFT" layoutX="-2.0" layoutY="211.0" prefHeight="48.0" prefWidth="433.0" text="5.1 Sustituir todas funciones de forma dentro del modelo." textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
                            <font>
                               <Font name="Arial" size="18.0" />
                            </font>
@@ -67,7 +66,7 @@
                               <Insets left="30.0" right="15.0" />
                            </padding>
                         </Label>
-                        <Label alignment="TOP_LEFT" layoutX="-2.0" layoutY="186.0" prefHeight="46.0" prefWidth="992.0" text="5.2 Sustituir los residuales por sus respectivas funciones." textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+                        <Label alignment="TOP_LEFT" layoutX="-1.0" layoutY="259.0" prefHeight="46.0" prefWidth="433.0" text="5.2 Sustituir los residuales por sus respectivas funciones." textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
                            <font>
                               <Font name="Arial" size="18.0" />
                            </font>
@@ -75,7 +74,7 @@
                               <Insets left="30.0" right="15.0" />
                            </padding>
                         </Label>
-                        <Label alignment="TOP_LEFT" layoutX="-1.0" layoutY="209.0" prefHeight="24.0" prefWidth="991.0" text="5.3 Distribuir N transpuesta en todos los terminos." textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+                        <Label alignment="TOP_LEFT" layoutX="-2.0" layoutY="305.0" prefHeight="45.0" prefWidth="433.0" text="5.3 Distribuir N transpuesta en todos los terminos." textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
                            <font>
                               <Font name="Arial" size="18.0" />
                            </font>
@@ -83,12 +82,7 @@
                               <Insets left="30.0" right="15.0" />
                            </padding>
                         </Label>
-                        <Label alignment="CENTER" layoutX="-3.0" layoutY="320.0" prefHeight="26.0" prefWidth="994.0" text="DESARROLLO" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
-                           <font>
-                              <Font name="Arial Bold" size="22.0" />
-                           </font>
-                        </Label>
-                        <Label alignment="TOP_LEFT" layoutX="-1.0" layoutY="232.0" prefHeight="24.0" prefWidth="991.0" text="5.4 Distribuir la integral." textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+                        <Label alignment="TOP_LEFT" layoutX="-2.0" layoutY="350.0" prefHeight="24.0" prefWidth="433.0" text="5.4 Distribuir la integral." textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
                            <font>
                               <Font name="Arial" size="18.0" />
                            </font>
@@ -96,7 +90,7 @@
                               <Insets left="30.0" right="15.0" />
                            </padding>
                         </Label>
-                        <Label alignment="TOP_LEFT" layoutX="-1.0" layoutY="256.0" prefHeight="24.0" prefWidth="991.0" text="5.5 Sacar las constantes que se encuentren dentro de cada integral." textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+                        <Label alignment="TOP_LEFT" layoutX="-2.0" layoutY="378.0" prefHeight="50.0" prefWidth="433.0" text="5.5 Sacar las constantes que se encuentren dentro de cada integral." textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
                            <font>
                               <Font name="Arial" size="18.0" />
                            </font>
@@ -104,7 +98,15 @@
                               <Insets left="30.0" right="15.0" />
                            </padding>
                         </Label>
-                        <Label alignment="TOP_LEFT" layoutX="-1.0" layoutY="280.0" prefHeight="45.0" prefWidth="991.0" text="5.6 Asignar un identificador a cada uno de los terminos del sistema para poder maniobrarlo de una manera mas sencilla." textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+                        <Label alignment="TOP_LEFT" layoutX="-1.0" layoutY="428.0" prefHeight="69.0" prefWidth="433.0" text="5.6 Asignar un identificador a cada uno de los terminos del sistema para poder maniobrarlo de una manera mas sencilla." textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="30.0" right="15.0" />
+                           </padding>
+                        </Label>
+                        <Label alignment="TOP_LEFT" layoutX="-2.0" layoutY="497.0" prefHeight="69.0" prefWidth="433.0" text="5.7 Se regresa el modelo a su estructura incial, pero utilizando su nueva representacion. A esta forma se le conoce como &quot;la forma fuerte&quot;" textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
                            <font>
                               <Font name="Arial" size="18.0" />
                            </font>
@@ -114,6 +116,58 @@
                         </Label>
                             </children>
                         </Pane>
+                  <Pane layoutX="567.0" layoutY="31.0" prefHeight="593.0" prefWidth="537.0">
+                     <children>
+                        <Button mnemonicParsing="false" opacity="0.8" prefHeight="593.0" prefWidth="537.0" styleClass="button-text" stylesheets="@../css/fullpackstyling.css" />
+                        <Circle layoutX="268.0" layoutY="14.0" radius="32.0" strokeType="INSIDE">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="0.9083969497498665" startX="0.5190840431752096" startY="0.47615414397233785">
+                                 <stops>
+                                    <Stop color="#2741a1" />
+                                    <Stop color="#2741a1" offset="0.007633587786259542" />
+                                    <Stop color="WHITE" offset="0.9961685823754789" />
+                                    <Stop color="#2741a100" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Circle>
+                        <Label alignment="CENTER" layoutX="-1.0" layoutY="69.0" prefHeight="26.0" prefWidth="539.0" text="DESARROLLO" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+                           <font>
+                              <Font name="Arial Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="38.0" fitWidth="46.0" layoutX="249.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/Galerkin.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="157.0" fitWidth="161.0" layoutX="14.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/5.1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="147.0" fitWidth="414.0" layoutX="62.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/5.3.4.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="81.0" fitWidth="349.0" layoutX="175.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/5.2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="136.0" fitWidth="523.0" layoutX="8.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/5.6.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="102.0" fitWidth="435.0" layoutX="83.0" layoutY="469.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/5.7.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
                     </children>
                 </Pane>
             </children>
