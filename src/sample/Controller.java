@@ -11,6 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 
 import java.io.IOException;
@@ -21,6 +22,8 @@ public class Controller implements Initializable {
 
     @FXML
     private Label label;
+
+    @FXML private javafx.scene.control.Button closeButton;
 
     @FXML
     private BorderPane mainPane;
@@ -107,23 +110,55 @@ public class Controller implements Initializable {
     }
 
     @FXML
+    private void closeWindow(ActionEvent event){
+        // get a handle to the stage
+        Stage stage = (Stage) closeButton.getScene().getWindow();
+        // do what you have to do
+        stage.close();
+    }
+
+    @FXML
     private void showInfo1(ActionEvent event){
-        InfoBox.display("Informacion", "Definir el dominio consiste en definir el cuerpo sobre el cual se va a realizar el calculo");
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("info1.fxml"));
+            Scene scene = new Scene(root);
+            InfoBox.displayScene("Definir el Dominio", scene);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
     private void showInfo2(ActionEvent event){
-        InfoBox.display("Informacion", "El proceso de mallado consiste en separar el cuerpo en varias partes, creando asi un conjunto finito de elementos y nodos. Para este caso cada elemento de la malla representa un tetrahedro con 4 nodos.\n");
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("info2.fxml"));
+            Scene scene = new Scene(root);
+            InfoBox.displayScene("Definir el Dominio", scene);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
     private void showInfo3(ActionEvent event){
-        InfoBox.display("Informacion", "En una interpolacion existe una variable de interes que necesitamos interpolar (En este caso A y B). Esta variable(s) de interes depende de dos conjuntos de datos. \n1. Valores puntuales de la variable de interes, \n2. Una serie de funciones, tambien conocidas como funciones de interpolacion o funciones de forma que provoque que cada uno de los puntos interpolados siga respetando la geometria del cuerpo. ");
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("info3.fxml"));
+            Scene scene = new Scene(root);
+            InfoBox.displayScene("Definir el Dominio", scene);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
     private void showInfo4(ActionEvent event){
-        InfoBox.display("Informacion", "Condicion 1: Significa que la suma de todas las funciones de forma debe de ser igual a 1.\nCondicion 2: Al principio asumimos que tenemos los valores en los nodos, por lo que las funciones de forma evaluadas en ese punto deben de respetar ese valor inicial asumido.");
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("info4.fxml"));
+            Scene scene = new Scene(root);
+            InfoBox.displayScene("Definir el Dominio", scene);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
@@ -131,11 +166,10 @@ public class Controller implements Initializable {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("conectividades.fxml"));
             Scene scene = new Scene(root);
-            InfoBox.displayTable("Tabla de Conectividades", scene);
+            InfoBox.displayScene("Tabla de Conectividades", scene);
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
     @Override

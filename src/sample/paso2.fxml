@@ -196,8 +196,8 @@
                               <Insets bottom="5.0" left="35.0" right="15.0" />
                            </padding>
                         </Label>
-                        <Button layoutX="386.0" layoutY="56.0" mnemonicParsing="false" onAction="#showInfo4" opacity="0.0" prefHeight="38.0" prefWidth="35.0" />
-                        <ImageView fitHeight="18.0" fitWidth="24.0" layoutX="395.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                        <Button layoutX="387.0" layoutY="53.0" mnemonicParsing="false" onAction="#showInfo4" opacity="0.0" prefHeight="38.0" prefWidth="35.0" />
+                        <ImageView fitHeight="18.0" fitWidth="24.0" layoutX="395.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../resources/question.png" />
                            </image>

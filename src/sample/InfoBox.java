@@ -17,7 +17,6 @@ public class InfoBox {
         window.initModality(Modality.APPLICATION_MODAL);
         window.setTitle(title);
         window.setMinWidth(350);
-        window.setMinHeight(250);
 
         Label label = new Label();
         label.setText(message);
@@ -34,13 +33,13 @@ public class InfoBox {
         window.showAndWait();
     }
 
-    public static void displayTable(String title, Scene scene){
+    public static void displayScene(String title, Scene scene){
         Stage window = new Stage();
 
         window.initModality(Modality.APPLICATION_MODAL);
         window.setTitle(title);
         window.setMinWidth(450);
-        window.setMinHeight(650);
+        window.setMinHeight(250);
 
         window.setScene(scene);
         window.showAndWait();
