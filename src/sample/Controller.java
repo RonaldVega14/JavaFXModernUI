@@ -30,7 +30,6 @@ public class Controller implements Initializable {
 
     @FXML
     private void Home(ActionEvent event){
-        System.out.println("Home clicked!");
         FxmlLoader object = new FxmlLoader();
         Pane view = object.getPage("home");
         mainPane.setCenter(view);
@@ -38,7 +37,6 @@ public class Controller implements Initializable {
 
     @FXML
     private void StartProcess(ActionEvent event){
-        System.out.println("Start clicked!");
         FxmlLoader object = new FxmlLoader();
         Pane view = object.getPage("paso0");
         mainPane.setCenter(view);
@@ -46,7 +44,6 @@ public class Controller implements Initializable {
 
     @FXML
     private void toStepOne(ActionEvent event){
-        System.out.println("To Event One clicked!");
         FxmlLoader object = new FxmlLoader();
         Pane view = object.getPage("paso1");
         mainPane.setCenter(view);
@@ -54,7 +51,6 @@ public class Controller implements Initializable {
 
     @FXML
     private void toStepTwo(ActionEvent event){
-        System.out.println("To Event Two clicked!");
         FxmlLoader object = new FxmlLoader();
         Pane view = object.getPage("paso2");
         mainPane.setCenter(view);
@@ -62,7 +58,6 @@ public class Controller implements Initializable {
 
     @FXML
     private void toStepTwoOne(ActionEvent event){
-        System.out.println("To Event Two Two clicked!");
         FxmlLoader object = new FxmlLoader();
         Pane view = object.getPage("paso2-1");
         mainPane.setCenter(view);
@@ -70,7 +65,6 @@ public class Controller implements Initializable {
 
     @FXML
     private void toStepThree(ActionEvent event){
-        System.out.println("To Event Three clicked!");
         FxmlLoader object = new FxmlLoader();
         Pane view = object.getPage("paso3");
         mainPane.setCenter(view);
@@ -78,7 +72,6 @@ public class Controller implements Initializable {
 
     @FXML
     private void toStepFour(ActionEvent event){
-        System.out.println("To Event Four clicked!");
         FxmlLoader object = new FxmlLoader();
         Pane view = object.getPage("paso4");
         mainPane.setCenter(view);
@@ -86,7 +79,6 @@ public class Controller implements Initializable {
 
     @FXML
     private void toStepFive(ActionEvent event){
-        System.out.println("To Event Five clicked!");
         FxmlLoader object = new FxmlLoader();
         Pane view = object.getPage("paso5");
         mainPane.setCenter(view);
@@ -94,9 +86,15 @@ public class Controller implements Initializable {
 
     @FXML
     private void toStepSix(ActionEvent event){
-        System.out.println("To Event Six clicked!");
         FxmlLoader object = new FxmlLoader();
         Pane view = object.getPage("paso6");
+        mainPane.setCenter(view);
+    }
+
+    @FXML
+    private void Thanks(ActionEvent event){
+        FxmlLoader object = new FxmlLoader();
+        Pane view = object.getPage("gracias");
         mainPane.setCenter(view);
     }
 
@@ -107,6 +105,9 @@ public class Controller implements Initializable {
 
     @FXML
     private void ExplainProcess(ActionEvent event){
+        FxmlLoader object = new FxmlLoader();
+        Pane view = object.getPage("infosw");
+        mainPane.setCenter(view);
     }
 
     @FXML

@@ -21,7 +21,7 @@
                     <children>
                   <Pane blendMode="SRC_ATOP" layoutX="920.0" layoutY="444.0" prefHeight="303.0" prefWidth="467.0" rotate="41.6" style="-fx-background-color: #FA2C56; -fx-background-radius: 70;" />
                         <Pane layoutX="-25.0" layoutY="-178.0" prefHeight="303.0" prefWidth="467.0" rotate="41.6" style="-fx-background-color: #FA2C56; -fx-background-radius: 70;" />
-                        <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="477.0" layoutY="648.0" mnemonicParsing="false" onAction="#toStepFive" prefHeight="49.0" prefWidth="220.0" styleClass="button-sig" stylesheets="@../css/fullpackstyling.css" text="Paso 5" textAlignment="CENTER" textFill="WHITE" underline="true">
+                        <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="477.0" layoutY="648.0" mnemonicParsing="false" onAction="#Thanks" prefHeight="49.0" prefWidth="220.0" styleClass="button-sig" stylesheets="@../css/fullpackstyling.css" text="Paso 7" textAlignment="CENTER" textFill="WHITE" underline="true">
                             <font>
                                 <Font name="System Bold" size="18.0" />
                             </font>
