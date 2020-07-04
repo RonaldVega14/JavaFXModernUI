@@ -88,7 +88,7 @@
                               <Insets left="45.0" right="5.0" />
                            </padding>
                         </Label>
-                        <Button fx:id="info1" layoutX="4.0" layoutY="114.0" mnemonicParsing="false" onAction="#showInfo" prefHeight="38.0" prefWidth="35.0" styleClass="button-con" stylesheets="@../css/fullpackstyling.css">
+                        <Button layoutX="4.0" layoutY="114.0" mnemonicParsing="false" onAction="#showInfo1" prefHeight="38.0" prefWidth="35.0" styleClass="button-con" stylesheets="@../css/fullpackstyling.css">
                            <rotationAxis>
                               <Point3D />
                            </rotationAxis>
@@ -129,7 +129,7 @@
                               <Font size="14.0" />
                            </font>
                         </Button>
-                        <Button fx:id="info2" layoutX="4.0" layoutY="202.0" mnemonicParsing="false" onAction="#showInfo" prefHeight="38.0" prefWidth="35.0" styleClass="button-con" stylesheets="@../css/fullpackstyling.css">
+                        <Button layoutX="4.0" layoutY="202.0" mnemonicParsing="false" onAction="#showInfo2" prefHeight="38.0" prefWidth="35.0" styleClass="button-con" stylesheets="@../css/fullpackstyling.css">
                            <graphic>
                               <ImageView fitHeight="18.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
