@@ -14,7 +14,7 @@
                 <Pane layoutX="5.0" layoutY="5.0" prefHeight="722.0" prefWidth="1174.0" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="5.0">
                     <children>
                         <Pane layoutX="-25.0" layoutY="-178.0" prefHeight="303.0" prefWidth="467.0" rotate="41.6" style="-fx-background-color: #FA2C56; -fx-background-radius: 70;" />
-                        <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="477.0" layoutY="605.0" mnemonicParsing="false" onAction="#toStepOne" prefHeight="51.0" prefWidth="220.0" styleClass="button-sig" stylesheets="@../css/fullpackstyling.css" text="NOTA: 10 (Regresar)" textAlignment="CENTER" textFill="WHITE" underline="true">
+                        <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="477.0" layoutY="605.0" mnemonicParsing="false" onAction="#Home" prefHeight="51.0" prefWidth="220.0" styleClass="button-sig" stylesheets="@../css/fullpackstyling.css" text="Ir al inicio" textAlignment="CENTER" textFill="WHITE" underline="true">
                             <font>
                                 <Font name="System Bold" size="18.0" />
                             </font>

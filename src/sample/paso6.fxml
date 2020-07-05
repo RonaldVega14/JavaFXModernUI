@@ -74,7 +74,7 @@
                               <Insets left="30.0" right="15.0" />
                            </padding>
                         </Label>
-                        <Button fx:id="info4" layoutX="870.0" layoutY="188.0" mnemonicParsing="false" onAction="#showInfo" opacity="0.0" prefHeight="38.0" prefWidth="35.0" />
+                        <Button fx:id="info4" layoutX="870.0" layoutY="188.0" mnemonicParsing="false" opacity="0.0" prefHeight="38.0" prefWidth="35.0" />
                         <ImageView fitHeight="18.0" fitWidth="24.0" layoutX="878.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../resources/question.png" />

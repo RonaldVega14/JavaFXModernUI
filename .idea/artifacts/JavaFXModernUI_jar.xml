@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JavaFXModernUI:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaFXModernUI_jar</output-path>
+    <root id="archive" name="JavaFXModernUI.jar">
+      <element id="module-output" name="JavaFXModernUI" />
+    </root>
+  </artifact>
+</component>
